@@ -13,7 +13,7 @@
 body {
     font-family: sans-serif;
     line-height: 1.5rem;
-    width: 72%;
+    width: 80%;
     margin: 0 auto;
     background: var(--white);
     color: var(--black);
@@ -52,8 +52,13 @@ footer {
     text-align: center;
 }
 
+main {
+    display: flex;
+}
+
 #myPalettes,
-#colorList {
+#colorList,
+#savedPalettes {
     display: flex;
     justify-content: space-around;
     margin: 1rem;
@@ -86,6 +91,15 @@ footer {
     }
 }
 
+main>div {
+    flex: 2 1 72%;
+}
+
+#savedPalettes {
+    display: initial;
+    flex: 0 1 24%;
+}
+
 #myPalettes {
     section {
         border: 2px inset darkgray;
@@ -105,9 +119,23 @@ footer {
     }
 }
 
+#currentPalette,
+.savedPal,
+.savedLi {
+    list-style-type: none;
+}
+
+#currentPalette,
+.savedPal {
+    display: flex;
+}
+
 #colorList {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(6, 1fr);
+    gap: 1rem; */
+    display: flex;
+    flex-flow: row wrap;
     gap: 1rem;
     list-style-type: none;
 }

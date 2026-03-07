@@ -27,22 +27,25 @@
     </header>
 
     <main>
+        <div>
+            <div id="myPalettes">
+                <section>
+                    <h2>Current Palette</h2>
+                    <ul id="currentPalette"></ul>
+                    <button type="button" id="saveBtn">save</button>
+                </section>
+            </div>
 
-        <div id="myPalettes">
             <section>
-                <h2>Current Palette</h2>
-                <ul id="currentPalette"></ul>
-                <button type="button" id="saveBtn">save</button>
-            </section>
-
-            <section id="savedPalettes">
-                <h2>Saved Palettes</h2>
-
+                <ul id="colorList">
+                </ul>
             </section>
         </div>
 
-        <section>
-            <ul id="colorList">
+        <section id="savedPalettes">
+            <h2>Saved Palettes</h2>
+            <button type="button" id="delBtn">delete all</button>
+            <ul id="saveList">
             </ul>
         </section>
 

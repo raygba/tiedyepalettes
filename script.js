@@ -18,21 +18,25 @@ fetch('colors.json')
             var image = document.createElement('img');
             var colorName = document.createElement('p');
             var colorBtn = document.createElement('button');
-            colorBtn.setAttribute('name', 'colorNode')
+            var colorLi = document.createElement('li');
+            colorLi.setAttribute('name', 'colorNode');
 
             image.src = element.imageUrl;
             colorName.innerHTML = element.name;
+            colorBtn.setAttribute('id', 'colorBtn')
 
             colorBtn.appendChild(image);
             colorBtn.appendChild(colorName);
-            colorList.append(colorBtn);
+            colorLi.appendChild(colorBtn);
+            colorList.append(colorLi);
         });
     })
     .then(colorNodes => {
         colorNodes = document.getElementsByName('colorNode')
         console.log(colorNodes)
+        var currentPal = document.getElementById('currentPalette');
+        console.log(currentPal)
         colorNodes.forEach(node => {
-            var currentPal = document.getElementById('currentPalette');
             const clone = node.cloneNode(true);
 
             node.addEventListener('click', cloneColors)
@@ -44,6 +48,52 @@ fetch('colors.json')
                 currentPal.removeChild(clone);
             }
         })
+        var saveBtn = document.getElementById('saveBtn');
+        var saveList = document.getElementById('saveList');
+        saveBtn.addEventListener('click', savePal);
+
+        function savePal() {
+            const paletteHTML = currentPal.innerHTML
+
+            // create palette list item
+            const li = document.createElement('li')
+            // create nested ul for list of colors
+            const ul = document.createElement('ul')
+            // for styling
+            ul.classList.add('savedPal')
+            li.classList.add('savedLi')
+
+            // show it immediately
+            ul.innerHTML = paletteHTML
+            li.append(ul)
+            saveList.append(li)
+
+            // save to localStorage
+            let palettes = JSON.parse(localStorage.getItem('palettes')) || []
+            palettes.push(paletteHTML)
+            localStorage.setItem('palettes', JSON.stringify(palettes))
+        }
+        function loadPalettes() {
+            const palettes = JSON.parse(localStorage.getItem('palettes')) || []
+
+            palettes.forEach(html => {
+                const li = document.createElement('li')
+                li.classList.add('savedPal')
+                li.innerHTML = html
+                saveList.append(li)
+            })
+        }
+
+        loadPalettes()
+
+        const delBtn = document.getElementById('delBtn')
+        delBtn.addEventListener('click', deletePals)
+        function deletePals() {
+            localStorage.removeItem('palettes')
+            saveList.innerHTML = ''
+            console.log('deleted')
+        }
+
     }
     )
     .catch(error => {
