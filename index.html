@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tie-Dye Palette Generator</title>
+    <title>Tie-Dye Palette Builder</title>
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -15,7 +15,7 @@
 <body>
     <header>
 
-        <h1>Tie-Dye Palette Generator</h1>
+        <h1>Tie-Dye Palette Builder</h1>
 
         <div>
             <button type="button" id="darkBtn" onclick="darkMode()" title="Toggle dark mode"
@@ -33,6 +33,8 @@
                     <h2>Current Palette</h2>
                     <ul id="currentPalette"></ul>
                     <button type="button" id="saveBtn">save</button>
+                    <button type="button" id="randomBtn">random</button>
+                    <button type="button" id="clearBtn">clear</button>
                 </section>
             </div>
 
@@ -43,8 +45,10 @@
         </div>
 
         <section id="savedPalettes">
-            <h2>Saved Palettes</h2>
-            <button type="button" id="delBtn">delete all</button>
+            <div class="section-header">
+                <h2>Saved Palettes</h2>
+                <button type="button" id="delBtn">delete all</button>
+            </div>
             <ul id="saveList">
             </ul>
         </section>
@@ -53,7 +57,7 @@
 
     <footer>
         <p>made for my love 💚</p>
-        <p>&copy; <a href="https://github.com/raygba">raygba</a> 2026</p>
+        <p>by <a href="https://github.com/raygba">ray</a> 2026</p>
     </footer>
 </body>
 

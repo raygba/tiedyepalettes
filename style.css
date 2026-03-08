@@ -63,7 +63,6 @@ main {
     justify-content: space-around;
     margin: 1rem;
     padding: 1rem;
-    border: 2px inset darkgray;
 
     h2 {
         text-align: center;
@@ -76,8 +75,11 @@ main {
     }
 
     img {
-        max-width: 100px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
         transition: 0.2s ease all;
+        border-bottom: 16px solid var(--hex);
     }
 
     img:hover {
@@ -91,26 +93,52 @@ main {
     }
 }
 
+#myPalettes,
+#colorList {
+    border: 1px inset darkgray;
+}
+
 main>div {
-    flex: 2 1 72%;
+    flex: 3 1 16rem;
 }
 
 #savedPalettes {
     display: initial;
-    flex: 0 1 24%;
+    flex: 2 1 4rem;
+    background-color: lightgray;
+    padding: 1rem 2rem;
+
+    #delBtn {
+        width: 8rem;
+        display: block;
+        margin: 1rem auto 0;
+        padding: 0.5rem 0;
+        border: 1px outset gray;
+        border-radius: 8px;
+    }
 }
 
 #myPalettes {
     section {
-        border: 2px inset darkgray;
+        border: none;
         padding: 1rem;
 
-        #saveBtn {
-            width: 100%;
+        >button {
+            width: 16rem;
+            display: block;
             margin: 1rem auto 0;
             padding: 0.5rem 0;
             border: 1px outset gray;
             border-radius: 8px;
+        }
+
+        #saveBtn {
+            background-color: darkcyan;
+            color: var(--white);
+        }
+
+        #saveBtn:hover {
+            background-color: hsl(from darkcyan h s 25%);
         }
 
         #saveBtn:active {
@@ -128,6 +156,8 @@ main>div {
 #currentPalette,
 .savedPal {
     display: flex;
+    /* flex-flow: row wrap; */
+    margin: 1.5rem 0;
 }
 
 #colorList {
@@ -140,17 +170,28 @@ main>div {
     list-style-type: none;
 }
 
+.section-header {
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 1rem 0;
+}
+
 /* JS toggle classes */
 
-.dark,
-.dark * {
+body.dark,
+main.dark,
+section.dark {
     color: var(--white);
     background: var(--black);
 
-    #myPalettes,
-    #myPalettes>*,
-    #colorList {
-        border: 2px inset rgb(80, 80, 80);
+    li button {
+        color: inherit;
+    }
+
+    #savedPalettes,
+    #savedPalettes>* {
+        background: #202020;
+        color: var(--white);
     }
 }
 
@@ -161,5 +202,11 @@ main>div {
     main button {
         font-family: serif;
         font-size: 86%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-flow: column wrap;
     }
 }

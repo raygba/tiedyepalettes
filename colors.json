@@ -2,81 +2,97 @@
     {
         "id": "1",
         "name": "Oxblood Red",
-        "imageUrl": "/images/img_125.jpg"
+        "imageUrl": "/images/img_125.jpg",
+        "hex": "#BD3C35"
     },
     {
         "id": "2",
         "name": "Coral Pink",
-        "imageUrl": "/images/img_126.jpg"
+        "imageUrl": "/images/img_126.jpg",
+        "hex": "#FC927E"
     },
     {
         "id": "3",
         "name": "Avocado",
-        "imageUrl": "/images/img_127.jpg"
+        "imageUrl": "/images/img_127.jpg",
+        "hex": "#689445"
     },
     {
         "id": "4",
         "name": "Sage Green",
-        "imageUrl": "/images/img_128.jpg"
+        "imageUrl": "/images/img_128.jpg",
+        "hex": "#99BA99"
     },
     {
         "id": "5",
         "name": "Celadon",
-        "imageUrl": "/images/img_129.jpg"
+        "imageUrl": "/images/img_129.jpg",
+        "hex": "#92D1BC"
     },
     {
         "id": "6",
         "name": "Teal Blue",
-        "imageUrl": "/images/img_130.jpg"
+        "imageUrl": "/images/img_130.jpg",
+        "hex": "#225E7D"
     },
     {
         "id": "7",
         "name": "Kingfisher Blue",
-        "imageUrl": "/images/img_131.jpg"
+        "imageUrl": "/images/img_131.jpg",
+        "hex": "#007E8C"
     },
     {
         "id": "8",
         "name": "Wedgewood Blue",
-        "imageUrl": "/images/img_132.jpg"
+        "imageUrl": "/images/img_132.jpg",
+        "hex": "#8BABC0"
     },
     {
         "id": "9",
         "name": "Eggplant",
-        "imageUrl": "/images/img_133.jpg"
+        "imageUrl": "/images/img_133.jpg",
+        "hex": "#662947"
     },
     {
         "id": "10",
         "name": "Nightshade",
-        "imageUrl": "/images/img_134.jpg"
+        "imageUrl": "/images/img_134.jpg",
+        "hex": "#604079"
     },
     {
         "id": "11",
-        "name": "Shiitake",
-        "imageUrl": "/images/img_135.jpg"
+        "name": "Shiitake Mushroom",
+        "imageUrl": "/images/img_135.jpg",
+        "hex": "#B39486"
     },
     {
         "id": "12",
         "name": "Wild Thing",
-        "imageUrl": "/images/img_136.jpg"
+        "imageUrl": "/images/img_136.jpg",
+        "hex": "#9E9082"
     },
     {
         "id": "13",
         "name": "Mist Gray",
-        "imageUrl": "/images/img_137.jpg"
+        "imageUrl": "/images/img_137.jpg",
+        "hex": "#DDDDDC"
     },
     {
         "id": "14",
         "name": "Warrior Princess",
-        "imageUrl": "/images/img_138.jpg"
+        "imageUrl": "/images/img_138.jpg",
+        "hex": "#9E8172"
     },
     {
         "id": "15",
         "name": "Alchemist",
-        "imageUrl": "/images/img_139.jpg"
+        "imageUrl": "/images/img_139.jpg",
+        "hex": "#858787"
     },
     {
         "id": "16",
         "name": "Blood Moon",
-        "imageUrl": "/images/img_140.jpg"
+        "imageUrl": "/images/img_140.jpg",
+        "hex": "#B26B69"
     }
 ]

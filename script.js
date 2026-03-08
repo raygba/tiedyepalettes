@@ -1,3 +1,9 @@
+// TO DO:
+// add delete btn to each saved pal
+// clear and random palette btns
+// more colors
+// save toggle prefs
+
 // get colors json array, parse data, add colors to li and append to color list element
 fetch('colors.json')
     .then(response => {
@@ -20,15 +26,19 @@ fetch('colors.json')
             var colorBtn = document.createElement('button');
             var colorLi = document.createElement('li');
             colorLi.setAttribute('name', 'colorNode');
+            colorLi.style.setProperty('--hex', element.hex)
 
             image.src = element.imageUrl;
             colorName.innerHTML = element.name;
-            colorBtn.setAttribute('id', 'colorBtn')
+            colorBtn.setAttribute('id', 'colorBtn');
 
             colorBtn.appendChild(image);
             colorBtn.appendChild(colorName);
             colorLi.appendChild(colorBtn);
             colorList.append(colorLi);
+
+            console.log(element.hex)
+
         });
     })
     .then(colorNodes => {
