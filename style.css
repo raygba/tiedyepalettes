@@ -7,7 +7,8 @@
 
 :root {
     --black: #131313;
-    --white: #f5f5f5
+    --white: #f5f5f5;
+    --primary-button: rgb(0, 120, 120);
 }
 
 body {
@@ -133,16 +134,18 @@ main>div {
         }
 
         #saveBtn {
-            background-color: darkcyan;
+            background-color: var(--primary-button);
             color: var(--white);
         }
 
         #saveBtn:hover {
-            background-color: hsl(from darkcyan h s 25%);
+            background-color: hsl(from var(--primary-button) h s 22%);
         }
 
         #saveBtn:active {
-            border: 1px inset gray;
+            /* border: 1px inset gray; */
+            background-color: hsl(from var(--primary-button) h s 20%);
+
         }
     }
 }

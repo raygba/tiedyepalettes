@@ -4,6 +4,9 @@
 // more colors
 // save toggle prefs
 
+// FIX:
+// its possible to save an empty palette
+
 // get colors json array, parse data, add colors to li and append to color list element
 fetch('colors.json')
     .then(response => {
@@ -29,6 +32,7 @@ fetch('colors.json')
             colorLi.style.setProperty('--hex', element.hex)
 
             image.src = element.imageUrl;
+            image.alt = '';
             colorName.innerHTML = element.name;
             colorBtn.setAttribute('id', 'colorBtn');
 
