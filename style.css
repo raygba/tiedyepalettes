@@ -14,7 +14,7 @@
 body {
     font-family: sans-serif;
     line-height: 1.5rem;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     background: var(--white);
     color: var(--black);
@@ -86,6 +86,7 @@ main {
     img:hover {
         transform: scale(1.1);
         box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.275);
+        /* border-bottom: 0 solid var(--hex); */
     }
 
     figure {
@@ -100,12 +101,12 @@ main {
 }
 
 main>div {
-    flex: 3 1 16rem;
+    flex: 3 1 24rem;
 }
 
 #savedPalettes {
     display: initial;
-    flex: 2 1 4rem;
+    flex: 2 1 2rem;
     background-color: lightgray;
     padding: 1rem 2rem;
 

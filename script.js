@@ -3,6 +3,7 @@
 // clear and random palette btns
 // more colors
 // save toggle prefs
+// maybe suggest complementary/analogous/etc colors
 
 // FIX:
 // its possible to save an empty palette

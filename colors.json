@@ -1,98 +1,233 @@
 [
     {
-        "id": "1",
-        "name": "Oxblood Red",
-        "imageUrl": "./images/img_125.jpg",
-        "hex": "#BD3C35"
+        "id": "12a",
+        "name": "Baby Pink",
+        "imageUrl": "./images/baby-pink.jpeg",
+        "hex": "#F2A1B6",
+        "hue": "pink"
     },
     {
-        "id": "2",
-        "name": "Coral Pink",
-        "imageUrl": "./images/img_126.jpg",
-        "hex": "#FC927E"
-    },
-    {
-        "id": "3",
-        "name": "Avocado",
-        "imageUrl": "./images/img_127.jpg",
-        "hex": "#689445"
-    },
-    {
-        "id": "4",
-        "name": "Sage Green",
-        "imageUrl": "./images/img_128.jpg",
-        "hex": "#99BA99"
-    },
-    {
-        "id": "5",
-        "name": "Celadon",
-        "imageUrl": "./images/img_129.jpg",
-        "hex": "#92D1BC"
-    },
-    {
-        "id": "6",
-        "name": "Teal Blue",
-        "imageUrl": "./images/img_130.jpg",
-        "hex": "#225E7D"
-    },
-    {
-        "id": "7",
-        "name": "Kingfisher Blue",
-        "imageUrl": "./images/img_131.jpg",
-        "hex": "#007E8C"
-    },
-    {
-        "id": "8",
-        "name": "Wedgewood Blue",
-        "imageUrl": "./images/img_132.jpg",
-        "hex": "#8BABC0"
-    },
-    {
-        "id": "9",
-        "name": "Eggplant",
-        "imageUrl": "./images/img_133.jpg",
-        "hex": "#662947"
-    },
-    {
-        "id": "10",
-        "name": "Nightshade",
-        "imageUrl": "./images/img_134.jpg",
-        "hex": "#604079"
-    },
-    {
-        "id": "11",
-        "name": "Shiitake Mushroom",
-        "imageUrl": "./images/img_135.jpg",
-        "hex": "#B39486"
-    },
-    {
-        "id": "12",
-        "name": "Wild Thing",
-        "imageUrl": "./images/img_136.jpg",
-        "hex": "#9E9082"
-    },
-    {
-        "id": "13",
-        "name": "Mist Gray",
-        "imageUrl": "./images/img_137.jpg",
-        "hex": "#DDDDDC"
+        "id": "181",
+        "name": "Hot Hibiscus",
+        "imageUrl": "./images/hot-hibiscus.jpeg",
+        "hex": "#FA467D",
+        "hue": "pink"
     },
     {
         "id": "14",
-        "name": "Warrior Princess",
-        "imageUrl": "./images/img_138.jpg",
-        "hex": "#9E8172"
+        "name": "Coral Pink",
+        "imageUrl": "./images/coral-pink.jpg",
+        "hex": "#FC927E",
+        "hue": "pink"
     },
     {
-        "id": "15",
-        "name": "Alchemist",
-        "imageUrl": "./images/img_139.jpg",
-        "hex": "#858787"
-    },
-    {
-        "id": "16",
+        "id": "210",
         "name": "Blood Moon",
-        "imageUrl": "./images/img_140.jpg",
-        "hex": "#B26B69"
+        "imageUrl": "./images/blood-moon.jpg",
+        "hex": "#B26B69",
+        "hue": "red"
+    },
+    {
+        "id": "136",
+        "name": "Oxblood Red",
+        "imageUrl": "./images/oxblood-red.jpg",
+        "hex": "#BD3C35",
+        "hue": "red"
+    },
+    {
+        "id": "120",
+        "name": "Tangerine",
+        "imageUrl": "./images/tangerine.jpeg",
+        "hex": "#DC5435",
+        "hue": "orange"
+    },
+    {
+        "id": "147",
+        "name": "Orange Sorbet",
+        "imageUrl": "./images/orange-sorbet.jpeg",
+        "hex": "#FFA659",
+        "hue": "orange"
+    },
+    {
+        "id": "4",
+        "name": "Deep Yellow",
+        "imageUrl": "./images/deep-yellow.jpeg",
+        "hex": "#FFC617",
+        "hue": "yellow"
+    },
+    {
+        "id": "33",
+        "name": "Avocado",
+        "imageUrl": "./images/avocado.jpg",
+        "hex": "#689445",
+        "hue": "green"
+    },
+    {
+        "id": "140",
+        "name": "Sage Green",
+        "imageUrl": "./images/sage-green.jpg",
+        "hex": "#99BA99",
+        "hue": "green"
+    },
+    {
+        "id": "28b",
+        "name": "Better Blue Green",
+        "imageUrl": "./images/better-blue-green.jpeg",
+        "hex": "#99BA99",
+        "hue": "green"
+    },
+    {
+        "id": "157",
+        "name": "Celadon",
+        "imageUrl": "./images/celadon.jpg",
+        "hex": "#92D1BC",
+        "hue": "blue"
+    },
+    {
+        "id": "25",
+        "name": "Turquoise",
+        "imageUrl": "./images/turquoise.jpeg",
+        "hex": "#16C3DB",
+        "hue": "blue"
+    },
+    {
+        "id": "188",
+        "name": "Bluebird",
+        "imageUrl": "./images/bluebird.jpeg",
+        "hex": "#3270C8",
+        "hue": "blue"
+    },
+    {
+        "id": "23",
+        "name": "Cerulean Blue",
+        "imageUrl": "./images/cerulean-blue.jpeg",
+        "hex": "#1F6FBF",
+        "hue": "blue"
+    },
+    {
+        "id": "95",
+        "name": "Royal Blue",
+        "imageUrl": "./images/royal-blue.jpeg",
+        "hex": "#1C4D8C",
+        "hue": "blue"
+    },
+    {
+        "id": "21",
+        "name": "Teal Blue",
+        "imageUrl": "./images/teal-blue.jpg",
+        "hex": "#225E7D",
+        "hue": "blue"
+    },
+    {
+        "id": "146",
+        "name": "Kingfisher Blue",
+        "imageUrl": "./images/kingfisher-blue.jpg",
+        "hex": "#007E8C",
+        "hue": "blue"
+    },
+    {
+        "id": "76",
+        "name": "Wedgewood Blue",
+        "imageUrl": "./images/wedgewood-blue.jpg",
+        "hex": "#8BABC0",
+        "hue": "blue"
+    },
+    {
+        "id": "112",
+        "name": "Periwinkle",
+        "imageUrl": "./images/periwinkle.jpeg",
+        "hex": "#8585CC",
+        "hue": "blue"
+    },
+    {
+        "id": "117",
+        "name": "Grape",
+        "imageUrl": "./images/grape.jpeg",
+        "hex": "#8D4295",
+        "hue": "purple"
+    },
+    {
+        "id": "185",
+        "name": "Nightshade",
+        "imageUrl": "./images/nightshade.jpg",
+        "hex": "#604079",
+        "hue": "purple"
+    },
+    {
+        "id": "115",
+        "name": "Eggplant",
+        "imageUrl": "./images/eggplant.jpg",
+        "hex": "#662947",
+        "hue": "purple"
+    },
+    {
+        "id": "119",
+        "name": "Red Violet",
+        "imageUrl": "./images/red-violet.jpeg",
+        "hex": "#A63A85",
+        "hue": "purple"
+    },
+    {
+        "id": "113",
+        "name": "Golden Brown",
+        "imageUrl": "./images/golden-brown.jpeg",
+        "hex": "#BF7C43",
+        "hue": "brown"
+    },
+    {
+        "id": "208",
+        "name": "Warrior Princess",
+        "imageUrl": "./images/warrior-princess.jpg",
+        "hex": "#9E8172",
+        "hue": "brown"
+    },
+    {
+        "id": "178",
+        "name": "Shiitake Mushroom",
+        "imageUrl": "./images/shiitake-mushroom.jpg",
+        "hex": "#B39486",
+        "hue": "brown"
+    },
+    {
+        "id": "135",
+        "name": "Truffle Brown",
+        "imageUrl": "./images/truffle-brown.jpeg",
+        "hex": "#6D5056",
+        "hue": "brown"
+    },
+    {
+        "id": "205",
+        "name": "Wild Thing",
+        "imageUrl": "./images/wild-thing.jpg",
+        "hex": "#9E9082",
+        "hue": "brown"
+    },
+    {
+        "id": "202",
+        "name": "Alchemist",
+        "imageUrl": "./images/alchemist.jpg",
+        "hex": "#858787",
+        "hue": "gray"
+    },
+    {
+        "id": "139",
+        "name": "Mist Gray",
+        "imageUrl": "./images/mist-gray.jpg",
+        "hex": "#DDDDDC",
+        "hue": "gray"
+    },
+    {
+        "id": "184",
+        "name": "Silver Lining",
+        "imageUrl": "./images/silver-lining.jpeg",
+        "hex": "#DDDDDC",
+        "hue": "gray"
+    },
+    {
+        "id": "200",
+        "name": "Raven Black",
+        "imageUrl": "./images/raven-black.jpeg",
+        "hex": "#090D0D",
+        "hue": "black"
     }
 ]
