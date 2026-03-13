@@ -42,7 +42,7 @@ fetch('colors.json')
             colorLi.appendChild(colorBtn);
             colorList.append(colorLi);
 
-            console.log(element.hex)
+            // console.log(element.hex)
 
         });
     })
@@ -93,8 +93,23 @@ fetch('colors.json')
 
             palettes.forEach(html => {
                 const li = document.createElement('li')
+                // create delete button
+                const delEach = document.createElement('button')
+                delEach.innerHTML = '❌'
+                delEach.classList.add('button', 'delete')
+                delEach.addEventListener('click', () => deleteEachPal(id = html.id, li))
+
+                function deleteEachPal(id, li) {
+                    let palettes = JSON.parse(localStorage.getItem('palettes')) || []
+                    palettes.splice(id, 1)
+                    localStorage.setItem('palettes', JSON.stringify(palettes))
+                    li.remove()
+                    console.log('deleted pal')
+                }
+
                 li.classList.add('savedPal')
                 li.innerHTML = html
+                li.append(delEach)
                 saveList.append(li)
             })
         }
@@ -106,7 +121,7 @@ fetch('colors.json')
         function deletePals() {
             localStorage.removeItem('palettes')
             saveList.innerHTML = ''
-            console.log('deleted')
+            console.log('deleted all')
         }
 
     }
